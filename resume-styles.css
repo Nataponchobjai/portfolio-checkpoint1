@@ -1,0 +1,114 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    padding: 20px;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.profile {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.profile-pic {
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+h1, h3 {
+    margin: 0;
+}
+
+h1 {
+    color: #0077cc;
+    margin-bottom: 10px;
+}
+
+.section h3 {
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+ul.skills-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    list-style-type: none;
+    padding: 0;
+}
+
+.project:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+li, .project a {
+    padding: 5px 0;
+}
+/* Smooth transition for hover effects */
+a, li, button {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for links */
+a:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover effect for skill list items */
+ul.skills-list li:hover {
+    transform: scale(1.05);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Fade-in animation for the entire container */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.container {
+    animation: fadeInUp 1s ease-out;
+}
+/* Existing CSS for the name */
+h1 {
+    color: #0077cc;
+    margin-bottom: 10px;
+    transition: color 0.3s ease, transform 0.3s ease; /* Add this line for smooth transitions */
+}
+
+/* Add hover effect for the name */
+h1:hover {
+    color: #004499; /* Change to a slightly darker blue */
+    transform: scale(1.1); /* Zoom in slightly */
+}
+body {
+    background-image: url('picbackgro.webp'); /* ใส่เส้นทางที่ถูกต้องไปยังรูปภาพของคุณ */
+    background-size: cover; /* ปรับขนาดรูปภาพให้ครอบคลุมพื้นที่ทั้งหมดของหน้าเว็บ */
+    background-repeat: no-repeat; /* ป้องกันรูปภาพไม่ให้ซ้ำซ้อนกัน */
+    background-position: center center; /* จัดตำแหน่งรูปภาพให้อยู่ตรงกลาง */
+}
+.content {
+    background-color: rgba(255, 255, 255, 0.8); /* สีพื้นหลังขาวโปร่งแสง */
+    padding: 20px;
+    border-radius: 10px; /* ทำให้มุมของพื้นหลังมีความนุ่มนวล */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* เพิ่มเงาเล็กน้อยใต้แต่ละส่วนเนื้อหา */
+}
